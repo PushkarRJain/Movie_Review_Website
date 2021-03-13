@@ -1,0 +1,28 @@
+body{
+  background-image: url(../images/pexels-snapwire-670061.jpg);
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#div2{
+  display: none;
+}
+#div3{
+  display: none;
+}
+h1,h2{
+  text-align: center;
+
+  margin-top: 10%;
+  font-family: 'Pacifico', cursive;
+  
+}
+label{
+  font-family: 'Pacifico', cursive;
+  font-size: larger;
+  padding-bottom: 3%;
+}
+button{
+  margin-top: 3%;
+  margin-left: 46%;
+}
