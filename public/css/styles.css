@@ -1,8 +1,11 @@
 body{
   background-image: url(../images/pexels-snapwire-670061.jpg);
- 
+  height: 100%;
+  height:97vh;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
 #div2{
   display: none;
@@ -25,4 +28,25 @@ label{
 button{
   margin-top: 3%;
   margin-left: 46%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #7605b8;
+  color: white
+}
+
+.round {
+  border-radius: 50%;
 }

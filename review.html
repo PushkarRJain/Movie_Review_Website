@@ -13,14 +13,14 @@
 <title>Sttings</title>
 </head>
 <body>
-
+  <a href="/" class="previous round">&#8249;</a>
   <div class="container">
 
   <h1>Pen your Review</h1>
   <form action='/review' method="post">
     <div class="form-group" id="div1">
     <label for="exampleFormControlSelect1">Select a Movie</label>
-    <select class="form-control"  name="cat">
+    <select class="form-control"  name="name">
       <option>3 Idiots</option>
       <option>Bhag Milkha Bhag</option>
       <option>Bhoot</option>
@@ -30,7 +30,7 @@
       <option>Hera Pheri</option>
       <option>Neerja</option>
       <option>Pari</option>
-      <option>Phir Hera Phera</option>
+      <option>Phir Hera Pheri</option>
       <option>Piku</option>
       <option>Zindagi na Milegi Dobara</option>
     </select>
@@ -47,7 +47,7 @@
   </div>
     <div class="form-group" id="div3">
       <label for="exampleFormControlTextarea1">Review</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <textarea class="form-control" name="review" id="exampleFormControlTextarea1" rows="3"></textarea>
       <button type="submit" class="btn btn-warning">Submit</button>
     </div>
     

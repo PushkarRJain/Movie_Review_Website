@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- basis instructions given by user. Not displayed on webpage -->
+
+
+<title>Reviews</title>
+</head>
+<body>
+
+
+      
+    <h1><%= results[0].name%></h1>
+    <h2><%= avgRating%>/5</h2>
+      <% results.forEach(function(item){ %>
+        <p><%= item.rating%></p>
+        <p><%= item.review%></p>
+      <%})%> 
+
+
+
+
+</body>
