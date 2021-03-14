@@ -1,5 +1,7 @@
 body{
-  background-color: rgb(250, 214, 10);
+  background-color: rgb(248, 72, 72);
+  opacity: .90;
+  overflow-x: hidden;
 }
 #top{
 
@@ -103,4 +105,7 @@ h1,h2{
 }
 img{
   height: 300px;
+}
+#final{
+  display: none;
 }
