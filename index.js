@@ -114,7 +114,7 @@ app.get('/signout',function(req,res){
   authenticate = 0;
   res.redirect('/');
 })
-app.get('/:inp',function(req,res){
+app.get('/movie/:inp',function(req,res){
   var tot_rat = 0;
   var tot_user = 0;
   let param = req.params.inp;
