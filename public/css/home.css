@@ -27,13 +27,14 @@ a{
 h1,h2{
   text-align: center;
   color: rgb(248, 225, 93);
-  margin-top: 10%;
+  margin-top: 0%;
+  padding-top: 20%;
   font-family: 'Pacifico', cursive;
   
 }
 .warbut{
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 80%;
+  color: rgb(250, 236, 159);
   
 }
 
@@ -108,4 +109,45 @@ img{
 }
 #final{
   display: none;
+}
+
+#nowshow{
+  margin-left: 45%;
+}
+#nav1
+{
+  position:fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 9;
+}
+#nav2{
+  position:fixed;
+  width: 100%;
+  top: 17%;
+  overflow: hidden;
+  z-index: 9;
+}
+@media screen and (max-width: 600px) {
+  #nav2{
+    position:fixed;
+    width: 100%;
+    top: 9%;
+    overflow: hidden;
+    z-index: 9;
+  }
+  h1,h2{
+    text-align: center;
+    color: rgb(248, 225, 93);
+    margin-top: 0%;
+    padding-top: 50%;
+    font-family: 'Pacifico', cursive;
+    
+  }
+  .card{
+    margin-left: 20%;
+    margin-bottom: 10%;
+  }
+
 }

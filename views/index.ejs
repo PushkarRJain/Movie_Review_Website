@@ -6,7 +6,7 @@
 <!-- basis instructions given by user. Not displayed on webpage -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel = "stylesheet" type = "text/css" href = "css/home.css">
 
 <title>Home</title>
@@ -14,7 +14,7 @@
 <body>
 
   <section id="top">
-    <nav class="navbar navbar-expand-lg" style="background-color:black;">
+    <nav id="nav1" class="navbar navbar-expand-lg" style="background-color:black;">
       <div class="container-fluid bar">
         <a class="navbar-brand" href="#"></a>
         <img class="logo"src="images/logo.png" style="height: 20%;">
@@ -59,53 +59,47 @@
       </div>
     </nav>
 
-    <nav id="myDIV" class="navbar navbar-expand-lg" style="background-color:rgb(248, 72, 72);opacity: .90;">
-      <div class="container-fluid bar">
-        <a class="navbar-brand" href="#"></a>
+  <nav id="nav2" class="navbar  navbar-light navbar-expand-lg" style="background-color:rgb(248, 225, 93);opacity: .90;">
+    <div class="container-fluid bar">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item warbut">
+            <a class="nav-link active fonth filter-button" data-filter="all" href="#">All</a>
+            
+          </li>
+          <li class="nav-item warbut">
+            <a class="nav-link fonth filter-button" data-filter="comedy" href="#">Comedy</a>
+            
+          </li>
+          <li class="nav-item warbut">
+            <a class="nav-link fonth filter-button" data-filter="family" href="#">Family</a>
+
+            
+          <li class="nav-item warbut">
+            <a class="nav-link fonth filter-button" data-filter="biography" href="#">Biography</a>
+           
+          </li>
+                         
         
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item warbut">
-              <a class="nav-link active fonth" href="#">All</a>
-              
-            </li>
-            <li class="nav-item warbut">
-              <a class="nav-link fonth" href="#">Comedy</a>
-              
-            </li>
-            <li class="nav-item warbut">
-              <a class="nav-link fonth" href="#">Family</a>
-
-              
-            </li>
-            <li class="nav-item warbut">
-              <a class="nav-link fonth" href="#">Drama</a>
-              
-            </li>
-            <li class="nav-item warbut">
-              <a class="nav-link fonth" href="#">Horror</a>
-              
-            </li>
-            <li class="nav-item warbut">
-              <a class="nav-link fonth" href="#">Biography</a>
-             
-            </li>
-
-          
-          </ul>
-          
-        </div>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+
   
     <h1>  Welcome to the Paradise of Cinema</h1>
+    <a id="nowshow" role="button" class="btn btn-light" href ="#all movies">Now Showing</a>
   </section>
+  <div id="all movies">
+  
   <div class="row">
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter comedy" style="width: 18rem;">
         <img class="card-img-top" src="images/3idiots.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov1%>/5⭐</h5>
@@ -114,7 +108,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter comedy" style="width: 18rem;">
         <img class="card-img-top" src="images/bhag milkha bhag.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov2%>/5⭐</h5>
@@ -124,7 +118,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter comedy" style="width: 18rem;">
         <img class="card-img-top" src="images/bhoot.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov3%>/5⭐</h5>
@@ -134,7 +128,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter comedy" style="width: 18rem;">
         <img class="card-img-top" src="images/dhoni.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov4%>/5⭐</h5>
@@ -146,7 +140,7 @@
   </div>
   <div class="row">
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter family" style="width: 18rem;">
         <img class="card-img-top" src="images/dil dhadak ne do.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov5%>/5⭐</h5>
@@ -156,7 +150,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter family" style="width: 18rem;">
         <img class="card-img-top" src="images/Ghajini.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov6%>/5⭐</h5>
@@ -166,7 +160,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter family" style="width: 18rem;">
         <img class="card-img-top" src="images/Herapheri.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov7%>/5⭐</h5>
@@ -176,7 +170,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter family" style="width: 18rem;">
         <img class="card-img-top" src="images/neerja.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov8%>/5⭐</h5>
@@ -188,7 +182,7 @@
   </div>
   <div class="row">
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter biography" style="width: 18rem;">
         <img class="card-img-top" src="images/pari.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov9%>/5⭐</h5>
@@ -198,7 +192,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter biography" style="width: 18rem;">
         <img class="card-img-top" src="images/phirherapheri.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov10%>/5⭐</h5>
@@ -208,7 +202,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card filter biography" style="width: 18rem;">
         <img class="card-img-top" src="images/piku.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov11%>/5⭐</h5>
@@ -218,7 +212,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-6">
-      <div class="card" style="width: 18rem">
+      <div class="card filter biography" style="width: 18rem">
         <img class="card-img-top" src="images/znmd.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%=mov12%>/5⭐</h5>
@@ -228,8 +222,9 @@
       </div>
     </div>
   </div>
+</div>
 
-
+<script src="js/selection.js"></script>
 
 <%     console.log(authenticate);%>
 <%     if(authenticate==1){%>
