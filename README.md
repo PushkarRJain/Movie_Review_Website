@@ -5,7 +5,8 @@ The site offers an excellent UI and a robust backend.
 
 A user can see the ratings and reviews without signing in, but needs to sign in to write a review.
 On opening the website, the user is first displayed a landing page.
-The landing page consists of a series of cards which display the movie posters, each card has a “Review” button from where the user will be redirected to a page which will have the average rating and the reviews given by all the users corresponding to that specific topic
+The landing page consists of a series of cards which display the movie posters, each card has a “Review” button from where the user will be redirected to a page which will have the average rating and the reviews given by all the users corresponding to that specific topic.
+The second navbar has a feature to filter movies according to genre
 It has a navbar from where the user can login, register and give review for the movies
 The authentication system has two parts, login and register. Hashing and salting authentication has been implemented.
 After successful login the user can give review
